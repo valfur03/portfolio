@@ -7,9 +7,9 @@ export default class TopBar extends React.Component {
 			<div className={styles.top_bar}>
 				<ul className={styles.sections_list}>
 					<li className={styles.section}><a href="#">Home</a></li>
-					<li className={styles.section}><a href="#">Aboute me</a></li>
+					{/* <li className={styles.section}><a href="#">Aboute me</a></li>
 					<li className={styles.section}><a href="#">My projects</a></li>
-					<li className={styles.section}><a href="#">My skills</a></li>
+					<li className={styles.section}><a href="#">My skills</a></li> */}
 				</ul>
 			</div>
 		)
