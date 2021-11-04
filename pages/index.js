@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import TopBar from '../components/top-bar'
 import Home from '../components/home'
+import AboutMe from '../components/about-me'
 import styles from '../styles/Home.module.css'
 
 export default function Portfolio() {
@@ -10,7 +11,10 @@ export default function Portfolio() {
         <title>Valentin Furmanek</title>
       </Head>
       <TopBar />
-      <Home />
+      <main>
+        <Home />
+        <AboutMe />
+      </main>
     </div>
   )
 }

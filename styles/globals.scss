@@ -9,6 +9,10 @@ body {
 	Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+	padding: 16px;
+}
+
 h1 {
 	margin: 4px 0;
 	
@@ -21,6 +25,18 @@ h2 {
 	color: $secondary-on-surface-color;
 	font-size: 1.5em;
 	font-weight: normal;
+}
+
+h3 {
+	margin: 24px 0;
+	
+	font-size: 1.8em;
+	font-weight: normal;
+}
+
+p {
+	color: $secondary-on-surface-color;
+	line-height: 1.4em;
 }
 
 a {

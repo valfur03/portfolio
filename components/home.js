@@ -4,7 +4,7 @@ import styles from './home.module.scss'
 export default class Home extends React.Component {
 	render() {
 		return (
-			<div className={styles.container}>
+			<div id="home" className={styles.container}>
 				<div className={styles.favicon}><img className={styles.favicon} src="/me.svg" alt="me" /></div>
 				<div className={styles.my_info}>
 					<h1>Valentin Furmanek</h1>
