@@ -1,5 +1,14 @@
 @import '../styles/variables.scss';
 
+.top_bar {
+	position: fixed;
+	top: 0;
+
+	width: 100%;
+	
+	display: block;
+}
+
 .sections_list {
 	margin: 0;
 	padding: 0 22px;
