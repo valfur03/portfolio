@@ -11,12 +11,14 @@
 .favicon {
 	margin: 16px 0;
 
-	border-radius: 96px;
+	border-radius: 50%;
 	width: 192px;
 	height: 192px;
 }
 
 .my_info {
+	margin-right: 96px;
+	
 	text-align: center;
 }
 
@@ -31,4 +33,40 @@
 .icon_img {
 	width: 36px;
 	height: 36px;
+}
+
+@media screen and (min-width: 1152px) {
+	
+	.container {
+		margin: 29px;
+		margin-bottom: 0;
+
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.favicon {
+		margin: 0;
+		width: 384px;
+		height: 384px;
+	}
+
+	.my_info {
+		text-align: left;
+	}
+
+	.icons_container {
+		margin-top: 96px;
+	}
+
+	.icon {
+		margin: 0 16px;
+	}
+
+	.icon_img {
+		width: 48px;
+		height: 48px;
+	}
+
 }

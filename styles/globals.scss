@@ -49,3 +49,16 @@ a {
 	margin: 0;
 	box-sizing: border-box;
 }
+
+@media screen and (min-width: 1152px) {
+	
+	html,
+	body {
+		font-size: 22px;
+	}
+
+	main {
+		padding: 96px;
+	}
+
+}

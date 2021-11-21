@@ -7,3 +7,19 @@
 
 	text-align: center;
 }
+
+@media screen and (min-width: 1152px) {
+
+	/*.container {
+		margin-top: 192px;
+	}*/
+
+	.paragraphs {
+		width: 100%;
+
+		display: grid;
+		grid-gap: 0 72px;
+		grid-template-columns: 45% 45%;
+	}
+	
+}
