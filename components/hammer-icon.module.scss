@@ -1,0 +1,9 @@
+@import '../styles/variables.scss';
+
+.container {
+	margin: 16px;
+	width: 32px;
+	height: 32px;
+
+	fill: $on-surface-color;
+}
