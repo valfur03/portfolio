@@ -31,11 +31,10 @@
 	height: 36px;
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 768px) {
 	
 	.container {
-		margin: 29px;
-		margin-bottom: 0;
+		margin-top: 29px;
 
 		flex-direction: row-reverse;
 		justify-content: center;
@@ -44,14 +43,45 @@
 
 	.favicon {
 		margin: 0;
+		width: 288px;
+		height: 288px;
+	}
+
+	.my_info {
+		margin-right: 72px;
+	
+		text-align: left;
+	}
+
+	.icons_container {
+		margin-top: 64px;
+	}
+
+	.icon {
+		margin: 0 12px;
+	}
+
+	.icon_img {
+		width: 36px;
+		height: 36px;
+	}
+
+}
+
+@media screen and (min-width: 1152px) {
+	
+	.container {
+		margin: 29px;
+		margin-bottom: 0;
+	}
+
+	.favicon {
 		width: 384px;
 		height: 384px;
 	}
 
 	.my_info {
 		margin-right: 96px;
-	
-		text-align: left;
 	}
 
 	.icons_container {
