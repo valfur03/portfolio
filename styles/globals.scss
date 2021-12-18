@@ -63,6 +63,15 @@ a {
 
 }
 
+@media screen and (min-width: 1440px) {
+
+	main {
+		margin: 0 auto;
+		width: 1248px;
+	}
+
+}
+
 @media only screen and (max-width: 1000px) and (orientation: landscape) {
 	
 	main {
