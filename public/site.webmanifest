@@ -1,0 +1,30 @@
+{
+	"name": "Valfur",
+	"display": "fullscreen",
+	"icons": [{
+			"src": "/icons/favicon-48px.png",
+			"sizes": "48x48",
+			"type": "image/png"
+		}, {
+			"src": "/icons/favicon-72px.png",
+			"sizes": "72x72",
+			"type": "image/png"
+		}, {
+			"src": "/icons/favicon-96px.png",
+			"sizes": "96x96",
+			"type": "image/png"
+		}, {
+			"src": "/icons/favicon-144px.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}, {
+			"src": "/icons/favicon-168px.png",
+			"sizes": "168x168",
+			"type": "image/png"
+		}, {
+			"src": "/icons/favicon-192px.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	]
+}
