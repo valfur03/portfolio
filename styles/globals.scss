@@ -62,3 +62,18 @@ a {
 	}
 
 }
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	
+	main {
+		padding: 64px;
+	}
+
+}
+
+@supports(padding:max(0px)) {
+    body {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}

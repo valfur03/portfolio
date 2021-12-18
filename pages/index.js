@@ -10,6 +10,7 @@ export default function Portfolio() {
     <div className={styles.container}>
       <Head>
         <title>Valentin Furmanek</title>
+	  	<meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover' />
 	  	<link rel="manifest" href="/site.webmanifest" />
 	  	<meta name="theme-color" content="#17a398" />
 	  	<meta name="application-name" content="Valfur" />
