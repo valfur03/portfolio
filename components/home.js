@@ -12,7 +12,7 @@ export default class Home extends React.Component {
 					<div className={styles.icons_container}>
 						<a className={styles.icon} href="https://github.com/valfur03"><img className={styles.icon_img} src="/icons/github.svg" alt="github" /></a>
 						<a className={styles.icon} href="https://www.linkedin.com/in/valentin-furmanek/"><img className={styles.icon_img} src="/icons/linkedin.svg" alt="linkedin" /></a>
-						<a className={styles.icon} href="https://twitter.com/hintauh"><img className={styles.icon_img} src="/icons/twitter.svg" alt="twitter" /></a>
+					{/*	<a className={styles.icon} href="https://twitter.com/hintauh"><img className={styles.icon_img} src="/icons/twitter.svg" alt="twitter" /></a> */}
 					</div>
 				</div>
 			</div>
