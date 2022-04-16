@@ -50,10 +50,12 @@ export default class ProjectCard extends React.Component {
 							return <p key={index}>{paragraph}</p>
 						})}
 					</div>
-					<TechsStack techs={techs} />
-					<div className={styles.repo}>
-						<LatestCommit github_repo={github_repo} />
-						<a href={`https://github.com/${github_repo}`}><img className={styles.github_icon} src='/icons/github.svg' alt='github' /></a>
+					<div className={styles.bottom_row}>
+						<TechsStack techs={techs} />
+						<div className={styles.repo}>
+							<LatestCommit github_repo={github_repo} />
+							<a href={`https://github.com/${github_repo}`} className={styles.github_link}><img className={styles.github_icon} src='/icons/github.svg' alt='github' /></a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@ const projects = [
 			'discord',
 			'supabase',
 		],
-		github_repo: 'theovgl/bot_alekol',
+		github_repo: 'theovgl/alekol-42',
 	}
 ]
 

@@ -1,34 +1,27 @@
 .container {
 	border-radius: 10px;
 	box-shadow: 2px 2px 16px rgba(33, 33, 33, 0.25);
-	width: 75%;
-	height: 384px;
+	width: 80%;
 	overflow: hidden;
 
 	display: flex;
 	flex-direction: row;
 
 	background-color: white;
-	font-size: 18px;
+	font-size: 12px;
 }
 
 .project_image {
-	img {
-		width: 384px;
-	}
+	display: none;
 }
 
 .project_description {
 	width: 100%;
 	box-sizing: border-box;
-	padding: 24px 36px;
+	padding: 12px 16px;
 
-	display: grid;
-	grid-template-rows: 72px auto 36px;
-	grid-template-areas: 
-		'title title'
-		'description description'
-		'techs github';
+	display: flex;
+	flex-direction: column;
 
 	h4 {
 		margin: 0;
@@ -37,18 +30,29 @@
 	}
 
 	.paragraphs {
-		margin: 0 auto;
+		margin: 12px auto;
 		width: 90%;
 
 		grid-area: description;
 
 		text-justify: auto;
 	}
+
+	.bottom_row {
+		margin: 0 auto;
+		width: 90%;
+		
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .techs {
+	min-width: 100%;
+	margin: 0 auto;
+	
 	img {
-		height: 36px;
+		height: 18px;
 	}
 
 	img:not(:last-child) {
@@ -57,26 +61,127 @@
 }
 
 .repo {
-	margin-left: auto;
-	
+	margin-top: 12px;
+
 	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	align-items: center;
 
 	.clock_icon {
-		margin-right: 12px;
-		height: 36px;
+		margin-right: 8px;
+		height: 18px;
+	}
+
+	.github_link {
+		margin-left: 12px;
+	}
+
+	.github_link:first-child {
+		margin-left: 0;
 	}
 
 	.github_icon {
-		margin-left: 24px;
-		width: 36px;
+		height: 18px;
 	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.container {
+		height: 256px;
+	}
+
+	.project_image {
+		display: block;
+
+		img {
+			width: 256px;
+		}
+	}
+
+	.paragraphs {
+		flex-grow: 1;
+	}
+
+	.techs {
+		min-width: 0;
+		margin: 0;
+	}
+
+	.repo {
+		margin: 0;
+		margin-left: auto;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.container {
+		font-size: 16px;
+	}
+
+	.techs {
+		img {
+			height: 24px;
+		}
+	}
+
+	.repo {
+		.clock_icon {
+			height: 24px;
+		}
+	
+		.github_link {
+			margin-left: 24px;
+		}
+
+		.github_icon {
+			height: 24px;
+		}
+	}
+
 }
 
 @media screen and (min-width: 1440px) {
 
 	.container {
-		width: 1080px;
+		width: 1152px;
+		height: 384px;
+
+		gap: 0;
+
+		font-size: 18px;
+	}
+
+	.project_image {
+		img {
+			width: 384px;
+		}
+	}
+
+	.project_description {
+		padding: 24px 36px;
+
+		grid-template-rows: 36px auto 36px;
+	}
+
+	.techs {
+		img {
+			height: 36px;
+		}
+	}
+
+	.repo {
+		.clock_icon {
+			margin-right: 12px;
+			height: 36px;
+		}
+
+		.github_icon {
+			height: 36px;
+		}
 	}
 
 }

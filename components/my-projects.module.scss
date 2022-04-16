@@ -1,7 +1,17 @@
-.container {}
+.container {
+	margin-top: 72px;
+}
 
 .projects {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+@media screen and (min-width: 1152px) {
+	
+	.container {
+		margin-top: 144px;
+	}
+
 }

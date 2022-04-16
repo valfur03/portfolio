@@ -58,6 +58,14 @@ a {
 	box-sizing: border-box;
 }
 
+@media only screen and (min-width: 768px) {
+	
+	main {
+		padding: 64px;
+	}
+
+}
+
 @media screen and (min-width: 1152px) {
 	
 	html,
@@ -76,14 +84,6 @@ a {
 	main {
 		margin: 0 auto;
 		width: 1248px;
-	}
-
-}
-
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
-	
-	main {
-		padding: 64px;
 	}
 
 }
