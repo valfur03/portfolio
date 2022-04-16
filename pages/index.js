@@ -3,6 +3,7 @@ import TopBar from '../components/top-bar'
 import WIP from '../components/wip'
 import Home from '../components/home'
 import AboutMe from '../components/about-me'
+import MyProjects from '../components/my-projects'
 import styles from '../styles/Home.module.css'
 
 export default function Portfolio() {
@@ -23,6 +24,7 @@ export default function Portfolio() {
       <main>
         <Home />
         <AboutMe />
+        <MyProjects />
       </main>
     </div>
   )

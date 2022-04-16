@@ -10,6 +10,7 @@ body {
 }
 
 main {
+	box-sizing: content-box;
 	padding: 16px;
 }
 
@@ -31,6 +32,13 @@ h3 {
 	margin: 24px 0;
 	
 	font-size: 1.8em;
+	font-weight: normal;
+}
+
+h4 {
+	margin: 24px 0;
+	
+	font-size: 1.5em;
 	font-weight: normal;
 }
 

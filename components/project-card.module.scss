@@ -1,0 +1,82 @@
+.container {
+	border-radius: 10px;
+	box-shadow: 2px 2px 16px rgba(33, 33, 33, 0.25);
+	width: 75%;
+	height: 384px;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: row;
+
+	background-color: white;
+	font-size: 18px;
+}
+
+.project_image {
+	img {
+		width: 384px;
+	}
+}
+
+.project_description {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 24px 36px;
+
+	display: grid;
+	grid-template-rows: 72px auto 36px;
+	grid-template-areas: 
+		'title title'
+		'description description'
+		'techs github';
+
+	h4 {
+		margin: 0;
+
+		grid-area: title;
+	}
+
+	.paragraphs {
+		margin: 0 auto;
+		width: 90%;
+
+		grid-area: description;
+
+		text-justify: auto;
+	}
+}
+
+.techs {
+	img {
+		height: 36px;
+	}
+
+	img:not(:last-child) {
+		margin-right: 12px;
+	}
+}
+
+.repo {
+	margin-left: auto;
+	
+	display: flex;
+	align-items: center;
+
+	.clock_icon {
+		margin-right: 12px;
+		height: 36px;
+	}
+
+	.github_icon {
+		margin-left: 24px;
+		width: 36px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+
+	.container {
+		width: 1080px;
+	}
+
+}
