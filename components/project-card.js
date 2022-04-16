@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './project-card.module.scss'
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
+dayjs.extend(relativeTime)
 
 function TechsStack(props) {
 	return (<div className={styles.techs}>
@@ -10,15 +13,31 @@ function TechsStack(props) {
 }
 
 function LatestCommit(props) {
+	const [latest_commit, setLatestCommit] = useState(null);
+
+	useEffect(async () => {
+		let res;
+		try {
+			res = await fetch(`https://api.github.com/repos/${props.github_repo}/commits`)
+		} catch (error) {
+			console.error(error);
+			return
+		}
+		const data = await res.json();
+		if (res.status >= 400 || data.length == 0) return
+		setLatestCommit(dayjs(data[0].commit.author.date).fromNow());
+	}, [])
+
+	if (latest_commit == null) return <></>
 	return (<>
 		<img className={styles.clock_icon} src='/icons/clock.svg' alt='clock' />
-		<p>2 days ago NO</p>
+		<p>{latest_commit}</p>
 	</>)
 }
 
 export default class ProjectCard extends React.Component {
 	render() {
-		const { name, description, techs, github_url } = this.props.project;
+		const { name, description, techs, github_repo } = this.props.project;
 		return (
 			<div className={styles.container}>
 				<div className={styles.project_image}>
@@ -33,8 +52,8 @@ export default class ProjectCard extends React.Component {
 					</div>
 					<TechsStack techs={techs} />
 					<div className={styles.repo}>
-						<LatestCommit github_url={github_url} />
-						<a href={github_url}><img className={styles.github_icon} src='/icons/github.svg' alt='github' /></a>
+						<LatestCommit github_repo={github_repo} />
+						<a href={`https://github.com/${github_repo}`}><img className={styles.github_icon} src='/icons/github.svg' alt='github' /></a>
 					</div>
 				</div>
 			</div>
