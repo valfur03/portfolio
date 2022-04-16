@@ -41,7 +41,7 @@ export default class ProjectCard extends React.Component {
 		return (
 			<div className={styles.container}>
 				<div className={styles.project_image}>
-					<img src={`/projects/${name}.jpg`} alt={`${name}_img`}/>
+					<img src={`/projects/${name}.webp`} alt={`${name}_img`}/>
 				</div>
 				<div className={styles.project_description}>
 					<h4>{name}</h4>
