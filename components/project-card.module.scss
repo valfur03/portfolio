@@ -49,41 +49,60 @@
 }
 
 .techs {
-	min-width: 100%;
 	margin: 0 auto;
+	min-width: 100%;
+	height: 18px;
 	
-	img {
-		height: 18px;
+	.tech_icon_wrapper {
+		display: inline-block;
+	}
+	
+	.tech_icon_wrapper {
+		height: 100%;
+
+		svg {
+			height: 100%;
+		}
 	}
 
-	img:not(:last-child) {
+	.tech_icon_wrapper:not(:last-child) {
 		margin-right: 12px;
 	}
 }
 
 .repo {
 	margin-top: 12px;
+	height: 18px;
 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
 
-	.clock_icon {
+	.clock_icon_wrapper {
 		margin-right: 8px;
-		height: 18px;
+		height: 100%;
+
+		display: inline-block;
+
+		svg {
+			height: 100%;
+		}
 	}
 
 	.github_link {
 		margin-left: 12px;
+		height: 100%;
+
+		display: inline-block;
+
+		svg {
+			height: 100%;
+		}
 	}
 
 	.github_link:first-child {
 		margin-left: 0;
-	}
-
-	.github_icon {
-		height: 18px;
 	}
 }
 
@@ -124,23 +143,11 @@
 	}
 
 	.techs {
-		img {
-			height: 24px;
-		}
+		height: 24px;
 	}
 
 	.repo {
-		.clock_icon {
-			height: 24px;
-		}
-	
-		.github_link {
-			margin-left: 24px;
-		}
-
-		.github_icon {
-			height: 24px;
-		}
+		height: 24px;
 	}
 
 }
@@ -151,15 +158,11 @@
 		width: 1152px;
 		height: 384px;
 
-		gap: 0;
-
 		font-size: 18px;
 	}
 
-	.project_image {
-		img {
-			width: 384px;
-		}
+	.project_image img {
+		width: 384px;
 	}
 
 	.project_description {
@@ -169,19 +172,14 @@
 	}
 
 	.techs {
-		img {
-			height: 36px;
-		}
+		height: 36px;
 	}
 
 	.repo {
-		.clock_icon {
-			margin-right: 12px;
-			height: 36px;
-		}
+		height: 36px;
 
-		.github_icon {
-			height: 36px;
+		.clock_icon_wrapper {
+			margin-right: 12px;
 		}
 	}
 
