@@ -1,6 +1,6 @@
 import React from 'react';
-import HammerIcon from './hammer-icon.module.js';
-import styles from './wip.module.scss';
+import HammerIcon from './Icons/Hammer';
+import styles from './WIP.module.scss';
 
 export default function WIP() {
 	return (

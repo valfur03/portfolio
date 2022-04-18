@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './hammer-icon.module.scss';
+import styles from './Hammer.module.scss';
 
 export default function HammerIcon() {
 	return (

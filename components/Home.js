@@ -1,8 +1,8 @@
 import React from 'react';
-import GithubIcon from './github-icon';
-import LinkedinIcon from './linkedin-icon';
-import MeImage from './me-image';
-import styles from './home.module.scss';
+import GithubIcon from './Icons/Github';
+import LinkedinIcon from './Icons/Linkedin';
+import MeImage from './MeImage';
+import styles from './Home.module.scss';
 
 export default function Home() {
 	return (

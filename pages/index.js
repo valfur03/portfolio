@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import TopBar from '../components/top-bar';
-import WIP from '../components/wip';
-import Home from '../components/home';
-import AboutMe from '../components/about-me';
-import MyProjects from '../components/my-projects';
+import TopBar from '../components/TopBar';
+import WIP from '../components/WIP';
+import Home from '../components/Home';
+import AboutMe from '../components/AboutMe';
+import MyProjects from '../components/MyProjects';
 import styles from '../styles/Home.module.css';
 
 export default function Portfolio() {

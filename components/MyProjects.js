@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './my-projects.module.scss';
-import ProjectCard from './project-card';
+import styles from './MyProjects.module.scss';
+import ProjectCard from './ProjectCard';
 
 const projects = [
 	{

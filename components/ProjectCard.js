@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import GithubIcon from './github-icon';
-import ClockIcon from './clock-icon';
-import TechIcons from './tech-icons';
-import styles from './project-card.module.scss';
+import GithubIcon from './Icons/Github';
+import ClockIcon from './Icons/Clock';
+import TechIcons from './TechIcons';
+import styles from './ProjectCard.module.scss';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 dayjs.extend(relativeTime);
