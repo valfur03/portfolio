@@ -4,6 +4,7 @@ import WIP from '../components/WIP';
 import Home from '../components/Home';
 import AboutMe from '../components/AboutMe';
 import MyProjects from '../components/MyProjects';
+import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
 export default function Portfolio() {
@@ -26,6 +27,7 @@ export default function Portfolio() {
 				<AboutMe />
 				<MyProjects />
 			</main>
+			<Footer />
 		</div>
 	);
 }
