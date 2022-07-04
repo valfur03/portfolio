@@ -1,0 +1,17 @@
+.container {
+	margin: 0 auto;
+	max-width: 512px;
+	padding: 0 1rem;
+}
+
+.title {
+	margin-top: 24px;
+	margin-bottom: 64px;
+
+	font-size: 2rem;
+	text-align: center;
+}
+
+.paragraph {
+	margin-top: 32px;
+}
