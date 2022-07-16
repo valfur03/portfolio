@@ -1,0 +1,25 @@
+@import '../styles/variables.scss';
+
+.tab {
+	width: 64px;
+	height: 64px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $surface-color;
+
+	&:not(last-child) {
+		border-bottom: 1px solid $secondary-background-color;
+	}
+
+	img {
+		width: 32px;
+		height: 32px;
+	}
+
+	&:hover {
+		background-color: $secondary-background-color;
+		cursor: pointer;
+	}
+}

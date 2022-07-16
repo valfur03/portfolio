@@ -1,0 +1,11 @@
+@import '../styles/variables.scss';
+
+.container {
+	overflow: hidden;
+
+	border-radius: 10px;
+
+	display: flex;
+
+	background-color: $surface-color;
+}
