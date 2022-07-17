@@ -9,6 +9,10 @@
 	align-items: center;
 	background-color: $surface-color;
 
+	&.selected {
+		background-color: $background-color;
+	}
+
 	&:not(last-child) {
 		border-bottom: 1px solid $secondary-background-color;
 	}

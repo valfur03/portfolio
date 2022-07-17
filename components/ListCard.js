@@ -8,7 +8,7 @@ export default function ListCard(props) {
 	if (selectedCard === undefined) return <></>;
 	return (
 		<div className={styles.container}>
-			<NavTabs list={props.list} selectCard={setSelectedCard} />
+			<NavTabs list={props.list} selectedCard={selectedCard} selectCard={setSelectedCard} />
 			<CardContent item={props.list[selectedCard]} />
 		</div>
 	);
