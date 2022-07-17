@@ -1,5 +1,10 @@
 @import '../styles/variables.scss';
 
+.container {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
 .tab {
 	width: 64px;
 	height: 64px;
