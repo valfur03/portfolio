@@ -23,6 +23,11 @@
 	align-items: center;
 
 	list-style-type: none;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 }
 
 .sections_list .section {

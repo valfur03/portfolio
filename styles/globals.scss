@@ -42,14 +42,20 @@ h4 {
 	font-weight: normal;
 }
 
+h5 {
+	margin: 16px 0;
+
+	font-size: 1em;
+	font-weight: normal;
+}
+
 p {
 	color: $secondary-on-surface-color;
 	line-height: 1.4em;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+	color: $primary-color;
 }
 
 * {
