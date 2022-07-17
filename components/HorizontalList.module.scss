@@ -1,0 +1,14 @@
+.container ul {
+	margin: 0 16px;
+	list-style-type: none;
+}
+
+.elm {
+	display: inline;
+}
+
+.elm:not(:first-child):before {
+	content: "-";
+
+	margin: 0 16px;
+}
