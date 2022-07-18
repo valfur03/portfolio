@@ -1,4 +1,4 @@
-import styles from './NavTabs.module.scss'
+import styles from './NavTabs.module.scss';
 
 export default function NavTabs(props) {
 	const { list, selectedCard, selectCard } = props;

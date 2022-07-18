@@ -1,4 +1,4 @@
-import styles from './HorizontalList.module.scss'
+import styles from './HorizontalList.module.scss';
 
 export default function HorizontalList(props) {
 	const { list } = props;
@@ -6,9 +6,7 @@ export default function HorizontalList(props) {
 	return (
 		<div className={styles.container}>
 			<ul>
-				{ list.map((elm, index) => 
-					<li className={styles.elm} key={index}>{ elm }</li>
-				) }
+				{ list.map((elm, index) => <li className={styles.elm} key={index}>{ elm.title }</li>) }
 			</ul>
 		</div>
 	);

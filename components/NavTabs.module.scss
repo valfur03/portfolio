@@ -47,17 +47,17 @@
 
 		flex-direction: column;
 	}
-	
+
 	.tab {
 		width: 64px;
 		height: 64px;
 		max-height: 64px;
-	
+
 		&:not(last-child) {
 			border-right: none;
 			border-bottom: 1px solid $secondary-background-color;
 		}
-	
+
 		img {
 			width: 32px;
 			height: 32px;
