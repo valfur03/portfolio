@@ -6,7 +6,7 @@ export default function HorizontalList(props) {
 	return (
 		<div className={styles.container}>
 			<ul>
-				{ list.map((elm, index) => <li className={styles.elm} key={index}>{ elm.title }</li>) }
+				{ list.map((elm, index) => <li className={styles.elm} key={index}>{ elm }</li>) }
 			</ul>
 		</div>
 	);
