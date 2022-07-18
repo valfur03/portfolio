@@ -4,8 +4,8 @@ import NavTabs from './NavTabs';
 import CardContent from './CardContent';
 
 export default function ListCard(props) {
-	const [selectedCard, setSelectedCard] = useState(props.list[0]?.id);
-	if (selectedCard === undefined) return <></>;
+	if (props.list.length === 0) return <></>;
+	const [selectedCard, setSelectedCard] = useState(0);
 	return (
 		<div className={styles.container}>
 			<NavTabs list={props.list} selectedCard={selectedCard} selectCard={setSelectedCard} />
