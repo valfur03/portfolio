@@ -1,5 +1,5 @@
 .container ul {
-	margin: 0 16px;
+	margin: 0 8px;
 	list-style-type: none;
 }
 
@@ -10,5 +10,17 @@
 .elm:not(:first-child):before {
 	content: "•";
 
-	margin: 0 16px;
+	margin: 0 8px;
+}
+
+@media screen and (min-width: 1440px) {
+
+	.container ul {
+		margin: 0 16px;
+	}
+
+	.elm:not(:first-child):before {
+		margin: 0 16px;
+	}
+
 }

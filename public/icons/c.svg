@@ -2,42 +2,40 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg width="682.67" height="682.67" version="1.1" viewBox="0 0 682.67 682.67" xmlns="http://www.w3.org/2000/svg">
  <defs>
-  <clipPath id="clipPath18">
+  <clipPath id="clipPath1365">
    <path d="m0 512h512v-512h-512z"/>
   </clipPath>
-  <clipPath id="clipPath30">
+  <clipPath id="clipPath1377">
    <path d="m0 512h512v-512h-512z"/>
   </clipPath>
-  <clipPath id="clipPath42">
+  <clipPath id="clipPath1389">
    <path d="m0 512h512v-512h-512z"/>
   </clipPath>
-  <clipPath id="clipPath58">
+  <clipPath id="clipPath1405">
    <path d="m0 512h512v-512h-512z"/>
   </clipPath>
  </defs>
  <g transform="matrix(1.3333 0 0 -1.3333 0 682.67)">
-  <g clip-path="url(#clipPath18)">
+  <g clip-path="url(#clipPath1365)">
    <g transform="translate(251.8 255.11)">
     <path d="m0 0 0.195-0.113 222.57 128.5c-2.734 4.736-6.693 8.764-11.592 11.592l-195.14 112.66c-9.799 5.658-21.871 5.658-31.67 0l-195.14-112.66c-9.799-5.657-15.835-16.112-15.835-27.427v-225.33c0-5.657 1.509-11.099 4.243-15.835l222.57 128.5z" fill="#659bd3"/>
    </g>
   </g>
-  <g clip-path="url(#clipPath30)">
+  <g clip-path="url(#clipPath1377)">
    <g transform="translate(29.432 126.5)">
     <path d="m0 0c2.734-4.735 6.692-8.764 11.592-11.592l195.14-112.66c9.799-5.657 21.871-5.657 31.67 0l195.14 112.66c4.899 2.828 8.858 6.857 11.592 11.592l-222.57 128.5z" fill="#004283"/>
    </g>
   </g>
-  <g clip-path="url(#clipPath42)">
+  <g clip-path="url(#clipPath1389)">
    <g transform="translate(478.81 367.66)" fill="#00599d">
     <path d="m0 0c0 5.658-1.509 11.1-4.243 15.835l-222.57-128.5 222.57-128.5c2.734 4.736 4.243 10.178 4.243 15.835z"/>
     <path d="m0 0c0 5.658-1.509 11.1-4.243 15.835l-222.57-128.5 222.57-128.5c2.734 4.736 4.243 10.178 4.243 15.835z"/>
    </g>
   </g>
-  <g clip-path="url(#clipPath58)">
+  <g clip-path="url(#clipPath1405)">
    <g transform="translate(365.47 189.49)">
     <path d="m0 0c-22.649-39.15-64.989-65.49-113.47-65.49-72.35 0-131 58.65-131 131s58.65 131 131 131c48.481 0 90.821-26.34 113.47-65.49" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="87"/>
    </g>
   </g>
-  <path d="m340.07 291.02v-24.014h-24.014v-24.014h24.014v-24.014h24.014v24.014h24.014v24.014h-24.014v24.014z" fill="#fff" stroke-linecap="round" stroke-width="3.5294"/>
-  <path d="m423.49 291.02v-24.014h-24.014v-24.014h24.014v-24.014h24.014v24.014h24.014v24.014h-24.014v24.014z" fill="#fff" stroke-linecap="round" stroke-width="3.5294"/>
  </g>
 </svg>

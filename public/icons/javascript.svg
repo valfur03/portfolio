@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="840" height="840" version="1.1" viewBox="0 0 840 840" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath634">
+   <path d="m0 630h630v-630h-630z"/>
+  </clipPath>
+  <clipPath id="clipPath646">
+   <path d="m0 630h630v-630h-630z"/>
+  </clipPath>
+ </defs>
+ <g transform="matrix(1.3333 0 0 -1.3333 0 840)">
+  <path d="m0 0h630v630h-630z" fill="#f7df1e"/>
+  <g clip-path="url(#clipPath634)">
+   <text transform="matrix(1 0 0 -1 162.22 53.544)" fill="#000000" font-family="'Neutra Text'" font-size="420px" font-weight="bold" xml:space="preserve"><tspan x="0" y="0">J</tspan></text>
+  </g>
+  <g clip-path="url(#clipPath646)">
+   <text transform="matrix(1 0 0 -1 371.12 53.544)" fill="#000000" font-family="'Neutra Text'" font-size="420px" font-weight="bold" xml:space="preserve"><tspan x="0" y="0">S</tspan></text>
+  </g>
+ </g>
+</svg>

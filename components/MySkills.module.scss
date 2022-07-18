@@ -1,0 +1,15 @@
+.rust_meme {
+	margin: 16px 0;
+	width: 220px;
+	height: 220px;
+}
+
+@media screen and (min-width: 1440px) {
+
+	.rust_meme {
+		margin: 32px 0;
+		width: 384px;
+		height: 384px;
+	}
+
+}

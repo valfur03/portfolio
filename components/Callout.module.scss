@@ -1,0 +1,20 @@
+@import '../styles/variables.scss';
+
+// .container {
+// 	// border-left: 6px solid #0000001A;
+// 	border-left: 6px solid $primary-color;
+// 	border-radius: 4px;
+// 	padding: 12px;
+// 
+// 	background-color: #0000000A;
+// }
+
+.container {
+	margin: 16px 0;
+	box-shadow: -2px 2px 3px #00000033;
+	border-left: 6px solid #0000001A;
+	border-radius: 4px;
+	padding: 12px;
+
+	background-color: #0000000A;
+}

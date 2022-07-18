@@ -2,13 +2,24 @@
 
 .container {
 	overflow: hidden;
-
+	
 	border-radius: 10px;
 	box-shadow: 2px 2px 16px rgba(33, 33, 33, 0.25);
-	min-height: 384px;
-
+	height: 256px;
+	
 	display: flex;
-
+	flex-direction: column;
+	
 	background-color: $surface-color;
 	font-size: 0.8em;
+}
+
+@media screen and (min-width: 1440px) {
+
+	.container {
+		height: 384px;
+
+		flex-direction: row;
+	}
+
 }
