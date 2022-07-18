@@ -45,13 +45,16 @@
 		overflow-x: hidden;
 		overflow-y: scroll;
 
+		min-height: unset;
+
 		flex-direction: column;
 	}
 
 	.tab {
-		width: 64px;
-		height: 64px;
+		min-width: 64px;
+		max-width: 64px;
 		max-height: 64px;
+		height: 64px;
 
 		&:not(last-child) {
 			border-right: none;
