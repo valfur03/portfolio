@@ -5,6 +5,7 @@ export default function NavTabs(props) {
 	return (
 		<div className={styles.container}>
 			<h4>{ title }</h4>
+			<hr />
 			<Content />
 		</div>
 	);
