@@ -1,3 +1,4 @@
+import { getDocuments } from 'outstatic/server';
 import Head from 'next/head';
 import TopBar from '../components/TopBar';
 import WIP from '../components/WIP';
@@ -7,7 +8,19 @@ import MyProjects from '../components/MyProjects';
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
-export default function Portfolio() {
+export async function getServerSideProps() {
+	const projects = getDocuments('projects', [
+		'title',
+		'content',
+		'coverImage',
+	]);
+	console.log(projects);
+	return {
+		props: { projects },
+	};
+}
+
+export default function Portfolio({ projects }) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -25,7 +38,7 @@ export default function Portfolio() {
 			<main>
 				<Home />
 				<AboutMe />
-				<MyProjects />
+				<MyProjects projects={projects} />
 			</main>
 			<Footer />
 		</div>

@@ -10,15 +10,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tiptap/core": "^2.0.0-beta.193",
+    "@tiptap/extension-code-block": "^2.0.0-beta.193",
+    "@types/react": ">=16.0.0",
     "dayjs": "^1.11.6",
     "next": "^12.3.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.55.0",
-    "typescript": "^4.8.4"
+    "webpack": ">=2"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
-    "eslint-config-next": "^12.3.1"
+    "eslint-config-next": "^12.3.1",
+    "outstatic": "0.0.27-rc"
+  },
+  "peerDependencies": {
+    "outstatic": "0.0.27-rc"
   }
 }

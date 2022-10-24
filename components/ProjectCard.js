@@ -48,25 +48,18 @@ function LatestCommit(props) {
 
 export default class ProjectCard extends React.Component {
 	render() {
-		const { name, description, techs, github_repo } = this.props.project;
+		const { title, content, coverImage } = this.props.project;
 		return (
 			<div className={styles.container}>
 				<div className={styles.project_image}>
-					<img src={`/projects/${name}.webp`} alt={`${name}_img`}/>
+					<img src={coverImage} alt={`${title}_img`}/>
 				</div>
 				<div className={styles.project_description}>
-					<h4>{name}</h4>
+					<h4>{title}</h4>
 					<div className={styles.paragraphs}>
-						{description.map((paragraph, index) => {
-							return <p key={index}>{paragraph}</p>;
-						})}
+						{ content }
 					</div>
 					<div className={styles.bottom_row}>
-						<TechsStack techs={techs} />
-						<div className={styles.repo}>
-							<LatestCommit github_repo={github_repo} />
-							<a href={`https://github.com/${github_repo}`} className={styles.github_link}><GithubIcon /></a>
-						</div>
 					</div>
 				</div>
 			</div>
