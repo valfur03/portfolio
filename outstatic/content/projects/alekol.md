@@ -1,6 +1,6 @@
 ---
 title: 'Alekol'
-status: 'draft'
+status: 'published'
 author:
   name: 'Valentin'
   picture: 'https://avatars.githubusercontent.com/u/40238252?v=4'
