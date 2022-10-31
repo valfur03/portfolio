@@ -1,5 +1,5 @@
 module.exports = {
-	"extends": ["next/core-web-vitals", "eslint:recommended"],
+	"extends": ["turbo", "next/core-web-vitals", "eslint:recommended"],
 	"rules": {
 		"array-bracket-newline": ["warn", "consistent"],
 		"array-bracket-spacing": ["warn", "never"],

@@ -3,5 +3,8 @@
 	"main": "index.js",
 	"devDependencies": {
 		"eslint-config-next": "^13.0.0"
+	},
+	"dependencies": {
+		"eslint-config-turbo": "^0.0.4"
 	}
 }

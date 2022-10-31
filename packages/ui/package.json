@@ -3,7 +3,7 @@
 	"main": "src/index.ts",
 	"types": "src/index.ts",
 	"scripts": {
-		"lint": "eslint"
+		"lint": "eslint ."
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.24",
