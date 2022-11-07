@@ -1,14 +1,32 @@
 {
-	"name": "ui",
-	"main": "src/index.ts",
-	"types": "src/index.ts",
-	"scripts": {
-		"lint": "eslint ."
-	},
-	"devDependencies": {
-		"@types/react": "^18.0.24",
-		"eslint-config-valfur": "*",
-		"react": "^18.2.0",
-		"typescript": "^4.8.4"
-	}
+  "name": "ui",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "storybook": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
+    "build-storybook": "NODE_OPTIONS=--openssl-legacy-provider build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/addons": "^6.5.13",
+    "@storybook/builder-webpack4": "^6.5.13",
+    "@storybook/manager-webpack4": "^6.5.13",
+    "@storybook/react": "^6.1.21",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.13",
+    "@types/react": "^18.0.24",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-styled-components": "^2.0.7",
+    "dayjs": "^1.11.6",
+    "eslint-config-valfur": "*",
+    "react": "^18.2.0",
+    "styled-components": "^5.3.6",
+    "typescript": "^4.8.4"
+  }
 }
