@@ -14,6 +14,10 @@ const Button = styled.button`
 `;
 
 const Anchor = styled.a`
+	height: 1em;
+
+	display: block;
+
 	font-size: 1em;
 `;
 
