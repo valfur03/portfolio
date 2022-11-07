@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 	* {
@@ -21,6 +21,10 @@ const GlobalStyle = createGlobalStyle`
 
 	p {
 		color: ${props => props.theme.color.onSurfaceSecondary};
+	}
+
+	svg {
+		color: ${props => props.theme.color.onSurface};
 	}
 
 	@media screen and (min-width: 834px) {

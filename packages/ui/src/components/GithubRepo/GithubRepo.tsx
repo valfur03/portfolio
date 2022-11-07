@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import SkeletonParagraph from '../SkeletonParagraph';
 import IconButton from '../IconButton';
-import Icon from '../Icon';
+import { Github } from 'icons';
 
 dayjs.extend(relativeTime);
 
@@ -57,7 +57,7 @@ export default function GithubRepo(props: GithubRepoProps): ReactElement {
 	return (
 		<Container>
 			<IconButton href={`https://github.com/${props.slug}`} size='small'>
-				<Icon />
+				<Github />
 			</IconButton>
 			{ latestCommitComponent }
 		</Container>

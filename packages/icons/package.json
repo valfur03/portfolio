@@ -1,0 +1,21 @@
+{
+  "name": "icons",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "prebuild": "rimraf src && rimraf dist",
+    "build": "npm run svgr && rollup -c",
+    "svgr": "svgr --icon --title-prop --replace-attr-values '#212121=currentColor' -d src assets"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.20.1",
+    "@rollup/plugin-babel": "^6.0.2",
+    "@svgr/cli": "^6.5.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^3.2.5"
+  }
+}
