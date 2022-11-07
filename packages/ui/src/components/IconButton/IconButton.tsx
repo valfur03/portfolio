@@ -24,7 +24,7 @@ const Anchor = styled.a`
 export interface IconButtonProps {
 	children: React.ReactNode,
 	href?: string,
-	size?: 'small',
+	size?: 'small' | 'medium' | 'large',
 	theme?: 'None' | 'primary' | 'secondary' | 'ternary',
 }
 

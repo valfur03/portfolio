@@ -26,6 +26,8 @@ export const defaultTheme = {
 	icon: {
 		size: {
 			small: '1.4rem',
+			medium: '1.7rem',
+			large: '2rem',
 		},
 	},
 };
