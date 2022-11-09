@@ -1,8 +1,7 @@
 {
   "name": "icons",
   "version": "1.0.0",
-  "type": "module",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.esm.js",
   "scripts": {
     "prebuild": "rimraf src && rimraf dist",
     "build": "npm run svgr && rollup -c",

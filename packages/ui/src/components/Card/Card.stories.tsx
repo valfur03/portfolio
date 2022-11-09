@@ -1,11 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import styled from 'styled-components';
 
-import Card from './Card';
-import CardContent from '../CardContent/CardContent';
-import CardMedia from '../CardMedia';
-import CardFooter from '../CardFooter/CardFooter';
-import GithubRepo from '../GithubRepo/GithubRepo';
+import { Card, CardContent, CardMedia, CardFooter, GithubRepo } from '../index';
 
 const Image = styled.img`
 	width: 14px;
