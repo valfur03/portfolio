@@ -6,6 +6,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 24px;
+}
+
+@media screen and (min-width: 834px) {
+	
+	.projects {
+		gap: 48px;
+	}
+
 }
 
 @media screen and (min-width: 1152px) {
