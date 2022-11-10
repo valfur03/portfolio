@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleType>`
 		margin: 0;
 		padding: 0;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		color: ${props => props.theme.color.onSurface};
+		color: ${defaultTheme.color.onSurface};
 	}
 	
 	body,
@@ -65,11 +65,11 @@ export const GlobalStyle = createGlobalStyle<GlobalStyleType>`
 	}
 
 	p {
-		color: ${props => props.theme.color.onSurfaceSecondary};
+		color: ${defaultTheme.color.onSurfaceSecondary};
 	}
 
 	svg {
-		color: ${props => props.theme.color.onSurface};
+		color: ${defaultTheme.color.onSurface};
 	}
 
 	@media screen and (min-width: 834px) {

@@ -1,24 +1,24 @@
 import { default as React, ReactElement } from 'react';
 import styled from 'styled-components';
+import { defaultTheme } from '../../'; // TODO
 
-const Button = styled.button`
+interface BaseButtonProps {
+	size: string,
+}
+
+const BaseButton = styled.button<BaseButtonProps>`
 	border: none;
 	outline: none;
-
-	background: none;
-	font-size: 1em;
-
-	&:hover {
-		cursor: pointer;
-	}
-`;
-
-const Anchor = styled.a`
 	height: 1em;
 
 	display: block;
 
-	font-size: 1em;
+	background: none;
+	font-size: ${props => props.size};
+
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 export interface IconButtonProps {
@@ -29,12 +29,6 @@ export interface IconButtonProps {
 }
 
 export default function IconButton(props: IconButtonProps): ReactElement {
-	let BaseButton = null;
 	if (props.size === undefined) props.size = 'small';
-	if (props.href === undefined) BaseButton = styled(Button);
-	else BaseButton = styled(Anchor);
-	BaseButton = BaseButton`
-		font-size: ${_props => _props.theme.icon.size[props.size]};
-	`;
-	return <BaseButton {...{ href: props.href }}>{ props.children }</BaseButton>;
+	return <BaseButton as={props.href === undefined ? 'button' : 'a' } {...{ href: props.href }} size={defaultTheme.icon.size[props.size]}>{ props.children }</BaseButton>;
 }

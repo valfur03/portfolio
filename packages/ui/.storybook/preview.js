@@ -1,5 +1,5 @@
 import React from 'react';
-import { GlobalStyle, ValfurLibThemeProvider as ThemeProvider, defaultTheme } from '../src/ThemeProvider';
+import { GlobalStyle, ThemeProvider, defaultTheme } from '../src';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

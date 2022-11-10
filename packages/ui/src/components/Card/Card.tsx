@@ -1,6 +1,6 @@
 import { default as React, ReactElement } from 'react';
-import { defaultTheme } from '../../ThemeProvider';
-import styled, { ThemeProvider } from 'styled-components';
+import styled from 'styled-components';
+import { ValfurLibThemeProvider as ThemeProvider } from '../../ThemeProvider';
 
 const Container = styled.div`
 	overflow: hidden;
@@ -36,10 +36,8 @@ export interface CardProps {
 }
 
 export default function Card(props: CardProps): ReactElement {
-	const theme = defaultTheme;
-	if (props.sx?.width) theme.card.small.width = props.sx.width + 'px';
 	return (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider>
 			<Container>
 				{ props.children }
 			</Container>
