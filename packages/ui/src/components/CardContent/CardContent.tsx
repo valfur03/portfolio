@@ -2,7 +2,8 @@ import { default as React, ReactElement } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
 
 	padding: 16px;
 	box-sizing: border-box;
