@@ -8,12 +8,9 @@
 		"packages/*"
 	],
 	"devDependencies": {
-		"@storybook/preset-scss": "^1.0.3",
-		"eslint": "^8.26.0",
-		"sass-loader": "^13.1.0"
+		"eslint": "^8.26.0"
 	},
 	"dependencies": {
-		"dayjs": "^1.11.6",
 		"styled-components": "^5.3.6"
 	}
 }
