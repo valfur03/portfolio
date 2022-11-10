@@ -18,6 +18,18 @@ const projects = [
 		],
 		github_repo: 'theovgl/alekol-42',
 	},
+	{
+		name: 'ft_irc',
+		description: [
+			'ft_irc is a school project where we had to implement an IRC server.',
+			'IRC is an old protocol, and the main difficulty was finding resources that were not obsolete.',
+			'We tried to follow an optimal workflow, like peer reviewing our code with pull requests, and testing each part of the project.',
+		],
+		techs: [
+			'c++',
+		],
+		github_repo: 'vfurmane/ft_irc',
+	},
 ];
 export default function MyProjects() {
 	return (
