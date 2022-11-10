@@ -1,19 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import styled from 'styled-components';
 
-import Card from './Card';
-import CardContent from '../CardContent/CardContent';
-import CardMedia from '../CardMedia';
-import CardFooter from '../CardFooter/CardFooter';
-import GithubRepo from '../GithubRepo/GithubRepo';
-
-const Image = styled.img`
-	width: 14px;
-
-	@media screen and (min-width: 834px) {
-		width: 24px;
-	}
-`;
+import { Card, CardContent, CardMedia, CardFooter, GithubRepo } from '../index';
 
 export default {
 	title: 'Card',
