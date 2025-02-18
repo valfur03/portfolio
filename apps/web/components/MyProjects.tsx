@@ -23,7 +23,7 @@ const projects = [
 		image: '/projects/votes-data.webp',
 		description: [
 			'Votes Data is a POC about a Dataviz interface for French elections.',
-			'The goal of this project is to provide meaningfull graphs to quickly understand statements about voters behaviors.',
+			'The goal of this project is to provide meaningful graphs to quickly understand statements about voters behaviors.',
 		],
 		techs: [
 			'nextjs',
