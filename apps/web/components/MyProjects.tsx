@@ -19,6 +19,22 @@ const projects = [
 		github_repo: 'theovgl/alekol-42',
 	},
 	{
+		name: 'Votes Data',
+		image: '/projects/votes-data.webp',
+		description: [
+			'Votes Data is a POC about a Dataviz interface for French elections.',
+			'The goal of this project is to provide meaningfull graphs to quickly understand statements about voters behaviors.',
+		],
+		techs: [
+			'nextjs',
+			'SSR',
+			'vercel',
+			'd3.js',
+			'figma',
+		],
+		github_repo: 'valfur03/votes-data',
+	},
+	{
 		name: 'ft_irc',
 		description: [
 			'ft_irc is a school project where we had to implement an IRC server.',
