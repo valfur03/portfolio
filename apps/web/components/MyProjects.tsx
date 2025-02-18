@@ -4,21 +4,6 @@ import { Card, CardContent, CardFooter, CardMedia, GithubRepo } from 'ui';
 
 const projects = [
 	{
-		name: 'Alekol',
-		image: '/projects/Alekol.webp',
-		description: [
-			'Alekol is a Discord bot to automatically add or remove a role whether you are logged at 42 school. It provides commands that use 42 and Discord API, and uses OAuth2 protocol.',
-			'This is a group project where we used Github Actions and pull requests features.',
-		],
-		techs: [
-			'nodejs',
-			'nextjs',
-			'discord',
-			'supabase',
-		],
-		github_repo: 'theovgl/alekol-42',
-	},
-	{
 		name: 'Votes Data',
 		image: '/projects/votes-data.webp',
 		description: [
@@ -33,6 +18,21 @@ const projects = [
 			'figma',
 		],
 		github_repo: 'valfur03/votes-data',
+	},
+	{
+		name: 'Alekol',
+		image: '/projects/Alekol.webp',
+		description: [
+			'Alekol is a Discord bot to automatically add or remove a role whether you are logged at 42 school. It provides commands that use 42 and Discord API, and uses OAuth2 protocol.',
+			'This is a group project where we used Github Actions and pull requests features.',
+		],
+		techs: [
+			'nodejs',
+			'nextjs',
+			'discord',
+			'supabase',
+		],
+		github_repo: 'theovgl/alekol-42',
 	},
 	{
 		name: 'ft_irc',
