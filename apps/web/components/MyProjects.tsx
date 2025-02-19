@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './MyProjects.module.scss';
 import { Card, CardContent, CardFooter, CardMedia, GithubRepo } from 'ui';
+import LiveUrl from "ui/src/components/LiveUrl";
 
 const projects = [
 	{
@@ -18,6 +19,7 @@ const projects = [
 			'figma',
 		],
 		github_repo: 'valfur03/votes-data',
+		live_url: 'https://votes-data.vercel.app'
 	},
 	{
 		name: 'Alekol',
@@ -63,6 +65,7 @@ export default function MyProjects() {
 								})}
 								<CardFooter>
 									<div></div>
+									{project.live_url && <LiveUrl href={project.live_url}/>}
 									<GithubRepo slug={project.github_repo} showLastCommit={true} />
 								</CardFooter>
 							</CardContent>
