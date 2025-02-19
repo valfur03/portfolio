@@ -5,4 +5,5 @@ export { default as CardMedia } from './CardMedia';
 export { default as GithubRepo } from './GithubRepo';
 export { default as Icon } from './Icon';
 export { default as IconButton } from './IconButton';
+export { default as LiveUrl } from './LiveUrl';
 export { default as SkeletonParagraph } from './SkeletonParagraph';
