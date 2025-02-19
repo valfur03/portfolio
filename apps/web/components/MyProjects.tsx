@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './MyProjects.module.scss';
-import { Card, CardContent, CardFooter, CardMedia, GithubRepo } from 'ui';
-import LiveUrl from "ui/src/components/LiveUrl";
+import { Card, CardContent, CardFooter, CardMedia, GithubRepo, LiveUrl } from 'ui';
 
 const projects = [
 	{
