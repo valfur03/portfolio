@@ -63,7 +63,6 @@ export default function MyProjects() {
 									return <p key={index}>{paragraph}</p>;
 								})}
 								<CardFooter>
-									<div></div>
 									{project.live_url && <LiveUrl href={project.live_url}/>}
 									<GithubRepo slug={project.github_repo} showLastCommit={true} />
 								</CardFooter>
