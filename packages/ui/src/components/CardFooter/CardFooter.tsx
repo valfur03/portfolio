@@ -7,9 +7,13 @@ const Container = styled.div`
 
 	display: flex;
 	flex-direction: column;
+	gap: 8px;
+
 
 	@media screen and (min-width: 834px) {
 		margin-top: 16px;
+
+		gap: 12px;
 	}
 
 	@media screen and (min-width: 1440px) {
@@ -17,6 +21,7 @@ const Container = styled.div`
 
 		flex-direction: row;
 		justify-content: flex-end;
+		gap: 16px;
 	}
 `;
 
