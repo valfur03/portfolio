@@ -16,7 +16,7 @@ const Container = styled.div`
 		margin-top: auto;
 
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 `;
 
