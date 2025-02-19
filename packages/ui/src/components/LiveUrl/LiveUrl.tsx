@@ -25,7 +25,7 @@ export interface LiveUrlProps {
 export default function LiveUrl(props: LiveUrlProps): ReactElement {
 	return (
 		<Container>
-			<IconButton href={props.href} size='small'>
+			<IconButton href={props.href} target='_blank' size='small'>
 				<OpenIn/>
 			</IconButton>
 		</Container>
