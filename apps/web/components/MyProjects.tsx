@@ -19,7 +19,7 @@ const projects = [
 			'figma',
 		],
 		github_repo: 'valfur03/votes-data',
-		live_url: 'https://votes-data.vercel.app'
+		live_url: 'https://votes-data.vercel.app',
 	},
 	{
 		name: 'Alekol',
