@@ -8,6 +8,7 @@
 		"packages/*"
 	],
 	"devDependencies": {
+		"@types/node": "^22",
 		"eslint": "^8.26.0"
 	},
 	"dependencies": {
