@@ -26,6 +26,7 @@ jobs:
           github-token: ${{ github.token }}
       - uses: R-J-dev/bunny-deploy@v3.0.0
         with:
+          concurrency: "50"
           storage-zone-name: ${{ vars.BUNNY_STORAGE_ZONE }}
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_API_KEY }}
           storage-endpoint: ${{ vars.BUNNY_STORAGE_ENDPOINT }}
