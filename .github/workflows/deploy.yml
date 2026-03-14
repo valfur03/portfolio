@@ -22,7 +22,7 @@ jobs:
           path: dist/
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ github.token }}
-      - uses: R-J-dev/bunny-deploy@v3
+      - uses: R-J-dev/bunny-deploy@v3.0.0
         with:
           storage-zone-name: ${{ vars.BUNNY_STORAGE_ZONE }}
           api-key: ${{ secrets.BUNNY_STORAGE_API_KEY }}
