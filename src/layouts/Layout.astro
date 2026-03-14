@@ -1,5 +1,7 @@
 ---
+import { Font } from "astro:assets";
 import "../styles/global.css";
+import { Header } from "../components/Header";
 
 interface Props {
 	title: string;
@@ -17,9 +19,13 @@ const { title, description } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, viewport-fit=cover" />
     <meta name="generator" content={Astro.generator} />
+    <Font cssVariable="--font-overpass" preload />
     <title>{title}</title>
 </head>
 <body>
-    <slot />
+    <Header />
+    <main>
+        <slot />
+    </main>
 </body>
 </html>
