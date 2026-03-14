@@ -11,7 +11,9 @@ jobs:
     name: Deploy
     if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    environment: production
+    environment:
+      name: production
+      url: https://valfur.fr
     concurrency:
       group: deploy-production
       cancel-in-progress: false
