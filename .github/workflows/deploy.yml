@@ -1,0 +1,32 @@
+name: Deploy
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy
+    if: github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ github.token }}
+      - uses: R-J-dev/bunny-deploy@v3
+        with:
+          storage-zone-name: ${{ vars.BUNNY_STORAGE_ZONE }}
+          api-key: ${{ secrets.BUNNY_STORAGE_API_KEY }}
+          storage-endpoint: ${{ vars.BUNNY_STORAGE_ENDPOINT }}
+          directory-to-upload: dist
+          pull-zone-id: ${{ vars.BUNNY_PULL_ZONE_ID }}
+          access-key: ${{ secrets.BUNNY_ACCOUNT_API_KEY }}
