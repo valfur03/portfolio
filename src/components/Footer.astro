@@ -1,0 +1,72 @@
+---
+import urlsConfig from "../config/urls.ts";
+import { FooterArticle } from "./FooterArticle.tsx";
+import { FooterLink } from "./FooterLink.tsx";
+import { TypographyParagraph } from "./typography/Paragraph.tsx";
+
+const year = new Date().getFullYear();
+---
+<footer class="flex flex-col items-start p-4 gap-6 bg-dark-background text-dark-on-surface md:items-center md:gap-12 md:p-12">
+    <div class="flex flex-col gap-6 md:flex-row md:justify-center md:gap-32">
+        <FooterArticle name="Social">
+            <ul class="list-none">
+                <li>
+                    <FooterLink
+                        href={urlsConfig.social.github}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <TypographyParagraph>GitHub</TypographyParagraph>
+                    </FooterLink>
+                </li>
+                <li>
+                    <FooterLink
+                        href={urlsConfig.social.linkedin}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <TypographyParagraph>LinkedIn</TypographyParagraph>
+                    </FooterLink>
+                </li>
+            </ul>
+        </FooterArticle>
+        <FooterArticle name="Navigation">
+            <ul class="list-none">
+                <li>
+                    <FooterLink
+                        href="/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <TypographyParagraph>Home</TypographyParagraph>
+                    </FooterLink>
+                </li>
+                <li>
+                    <FooterLink
+                        href={urlsConfig.repos.portfolio}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <TypographyParagraph>Source code</TypographyParagraph>
+                    </FooterLink>
+                </li>
+                <li>
+                    <FooterLink
+                        href={urlsConfig.blog}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <TypographyParagraph>Blog</TypographyParagraph>
+                    </FooterLink>
+                </li>
+            </ul>
+        </FooterArticle>
+    </div>
+	<TypographyParagraph>
+		© <span id="copyright-year">{year}</span> – Valentin Furmanek
+	</TypographyParagraph>
+</footer>
+<script>
+    document.getElementById('copyright-year')!.textContent =
+        String(new Date().getFullYear());
+</script>

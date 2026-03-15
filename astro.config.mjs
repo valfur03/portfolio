@@ -140,11 +140,11 @@ export default defineConfig({
 					// 	weight: "600",
 					// 	style: "italic",
 					// },
-					// {
-					// 	src: ["./src/assets/fonts/Overpass-Bold.woff2"],
-					// 	weight: "700",
-					// 	style: "normal",
-					// },
+					{
+						src: ["./src/assets/fonts/Overpass-Bold.woff2"],
+						weight: "700",
+						style: "normal",
+					},
 					// {
 					// 	src: ["./src/assets/fonts/Overpass-BoldItalic.woff2"],
 					// 	weight: "700",

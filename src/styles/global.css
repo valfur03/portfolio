@@ -10,6 +10,8 @@
 	--color-on-surface: var(--on-surface);
 	--color-destructive: var(--destructive);
 	--color-ring: var(--ring);
+	--color-dark-background: var(--on-surface);
+	--color-dark-on-surface: var(--dark-on-surface);
 	--font-inter: var(--font-inter);
 	--font-overpass: var(--font-overpass);
 	--inset-shadow-lg: inset 0 0px 2px 0 rgb(0 0 0 / 0.3);
@@ -32,6 +34,7 @@
 	--on-surface: #212121;
 	--destructive: #e7000b;
 	--ring: var(--color-on-surface);
+	--dark-on-surface: #dedede;
 }
 
 html {
