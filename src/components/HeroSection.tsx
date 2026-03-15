@@ -27,6 +27,7 @@ export const HeroSection = () => {
 						href={urlsConfig.social.linkedin}
 						target="_blank"
 						rel="noreferrer noopener"
+						aria-label="LinkedIn"
 					>
 						<IconLinkedIn className="size-8" />
 					</a>
@@ -34,6 +35,7 @@ export const HeroSection = () => {
 						href={urlsConfig.social.github}
 						target="_blank"
 						rel="noreferrer noopener"
+						aria-label="GitHub"
 					>
 						<IconGitHub className="size-8" />
 					</a>
