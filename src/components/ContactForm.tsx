@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Controller, useForm } from "react-hook-form";
-import { z } from "zod";
+import { z } from "zod/mini";
 import { Button } from "./Button.tsx";
 import { Field, FieldError, FieldGroup, FieldLabel } from "./Field.tsx";
 import { Input } from "./Input.tsx";
@@ -14,12 +14,20 @@ import {
 const formSchema = z.object({
 	name: z
 		.string()
-		.min(1, { message: "Name must be at least 1 character long." }),
+		.check(
+			z.minLength(1, { message: "Name must be at least 1 character long." }),
+		),
 	email: z.email({ message: "Invalid email address." }),
 	message: z
 		.string()
-		.min(10, { message: "Message must be at least 10 characters long." })
-		.max(2500, { message: "Message must be at most 2500 characters long." }),
+		.check(
+			z.minLength(10, {
+				message: "Message must be at least 10 characters long.",
+			}),
+			z.maxLength(2500, {
+				message: "Message must be at most 2500 characters long.",
+			}),
+		),
 });
 type FormValues = z.infer<typeof formSchema>;
 
