@@ -1,4 +1,7 @@
+import urlsConfig from "../config/urls.ts";
 import { Button } from "./Button.tsx";
+import { IconGitHub } from "./icons/GitHub.tsx";
+import { IconLinkedIn } from "./icons/LinkedIn.tsx";
 import { MeLightFromBelow } from "./MeLightFromBelow.tsx";
 import { MeTransparentBottom } from "./MeTransparentBottom.tsx";
 import { TypographyH1 } from "./typography/H1.tsx";
@@ -18,7 +21,21 @@ export const HeroSection = () => {
 				<TypographyParagraph className="animate-fade-in-up [animation-delay:300ms]">
 					Software engineer building open-source tools everyday
 				</TypographyParagraph>
-				<div className="mt-3 flex gap-4 animate-fade-in-up [animation-delay:400ms]">
+				<div className="mt-3 flex items-center gap-4 animate-fade-in-up [animation-delay:400ms]">
+					<a
+						href={urlsConfig.social.linkedin}
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						<IconLinkedIn className="size-8" />
+					</a>
+					<a
+						href={urlsConfig.social.github}
+						target="_blank"
+						rel="noreferrer noopener"
+					>
+						<IconGitHub className="size-8" />
+					</a>
 					<Button variant="outline">Contact me</Button>
 				</div>
 			</div>
