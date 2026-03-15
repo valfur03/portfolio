@@ -1,12 +1,16 @@
 ---
 import anchorsConfig from "../config/anchors.ts";
+import { Arm } from "./Arm.tsx";
 import { ContactForm } from "./ContactForm.tsx";
 ---
 
 <section
     id={anchorsConfig.contact}
-    class="mx-auto py-32 px-4 flex flex-col justify-center items-center text-center md:max-w-4xl md:px-16 md:py-64 lg:max-w-5xl"
+    class="relative mx-auto py-32 px-4 flex flex-col justify-center items-start text-center md:max-w-4xl md:px-16 md:py-64 lg:max-w-6xl"
 >
-    <h2 class="font-overpass text-3xl font-semibold mb-4">Want to get in touch?</h2>
-    <ContactForm client:idle />
+    <div class="w-full flex flex-col items-center md:items-start md:max-w-lg lg:max-w-2xl">
+        <h2 class="font-overpass text-3xl font-semibold mb-4">Want to get in touch?</h2>
+        <ContactForm client:idle />
+    </div>
+    <Arm className="hidden absolute bottom-0 right-0 h-110 md:block" />
 </section>
