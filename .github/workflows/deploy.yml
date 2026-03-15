@@ -28,6 +28,7 @@ jobs:
         with:
           concurrency: "50"
           enable-purge-pull-zone: true
+          enable-delete-action: true
           replication-timeout: 7000
           storage-zone-name: ${{ vars.BUNNY_STORAGE_ZONE }}
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_API_KEY }}
