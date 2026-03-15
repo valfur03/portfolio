@@ -1,11 +1,16 @@
-export const ValfurTextLogo = () => {
+import { cn } from "../lib/utils/cn.ts";
+
+export type ValfurTextLogoProps = {
+	className?: string;
+};
+
+export const ValfurTextLogo = ({ className }: ValfurTextLogoProps) => {
 	return (
 		<svg
-			width="48"
-			height="20"
 			viewBox="0 0 48 20"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
+			className={cn("w-12", className)}
 		>
 			<title>Valfur logo</title>
 			<rect
