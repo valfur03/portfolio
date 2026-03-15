@@ -62,7 +62,9 @@ body {
 	*,
 	*::before,
 	*::after {
+		/* biome-ignore lint/complexity/noImportantStyles: override all styles */
 		animation-duration: 0.01ms !important;
+		/* biome-ignore lint/complexity/noImportantStyles: override all styles */
 		animation-iteration-count: 1 !important;
 	}
 }

@@ -18,16 +18,14 @@ const formSchema = z.object({
 			z.minLength(1, { message: "Name must be at least 1 character long." }),
 		),
 	email: z.email({ message: "Invalid email address." }),
-	message: z
-		.string()
-		.check(
-			z.minLength(10, {
-				message: "Message must be at least 10 characters long.",
-			}),
-			z.maxLength(2500, {
-				message: "Message must be at most 2500 characters long.",
-			}),
-		),
+	message: z.string().check(
+		z.minLength(10, {
+			message: "Message must be at least 10 characters long.",
+		}),
+		z.maxLength(2500, {
+			message: "Message must be at most 2500 characters long.",
+		}),
+	),
 });
 type FormValues = z.infer<typeof formSchema>;
 
@@ -41,7 +39,7 @@ export const ContactForm = () => {
 		},
 	});
 
-	const onSubmit = (values: FormValues) => {};
+	const onSubmit = (_values: FormValues) => {};
 
 	return (
 		<form
