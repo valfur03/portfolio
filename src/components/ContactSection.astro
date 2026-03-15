@@ -1,0 +1,12 @@
+---
+import anchorsConfig from "../config/anchors.ts";
+import { ContactForm } from "./ContactForm.tsx";
+---
+
+<section
+    id={anchorsConfig.contact}
+    class="mx-auto py-32 px-4 flex flex-col justify-center items-center text-center md:max-w-4xl md:px-16 md:py-64 lg:max-w-5xl"
+>
+    <h2 class="font-overpass text-3xl font-semibold mb-4">Want to get in touch?</h2>
+    <ContactForm client:idle />
+</section>

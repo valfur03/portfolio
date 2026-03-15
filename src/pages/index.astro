@@ -1,10 +1,10 @@
 ---
-import { ContactSection } from "../components/ContactSection";
+import ContactSection from "../components/ContactSection.astro";
 import { HeroSection } from "../components/HeroSection";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Valentin Furmanek" description="My portfolio">
     <HeroSection />
-    <ContactSection client:visible />
+    <ContactSection />
 </Layout>
