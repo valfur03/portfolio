@@ -2,12 +2,17 @@
 
 @theme inline {
 	--animate-fade-in-up: var(--fade-in-up);
+	--color-primary: var(--primary);
 	--color-background: var(--background);
+	--color-background-secondary: var(--background-secondary);
+	--color-midgrey: var(--midgrey);
+	--color-surface: var(--surface);
 	--color-on-surface: var(--on-surface);
 	--color-destructive: var(--destructive);
 	--color-ring: var(--ring);
 	--font-inter: var(--font-inter);
 	--font-overpass: var(--font-overpass);
+	--inset-shadow-lg: inset 0 0px 2px 0 rgb(0 0 0 / 0.3);
 }
 
 @layer base {
@@ -19,7 +24,11 @@
 
 :root {
 	--fade-in-up: fade-in-up 0.5s ease-out both;
+	--primary: #3c6ca7;
 	--background: #f1f1f1;
+	--background-secondary: #e1e1e1;
+	--midgrey: #7f7f7f;
+	--surface: #fbfbfb;
 	--on-surface: #212121;
 	--destructive: #e7000b;
 	--ring: var(--color-on-surface);
@@ -41,6 +50,12 @@ body {
 	padding-right: env(safe-area-inset-right);
 	padding-bottom: env(safe-area-inset-bottom);
 	padding-left: env(safe-area-inset-left);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
 }
 
 @media (prefers-reduced-motion: reduce) {

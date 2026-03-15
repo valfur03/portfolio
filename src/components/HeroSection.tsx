@@ -1,3 +1,4 @@
+import anchorsConfig from "../config/anchors.ts";
 import urlsConfig from "../config/urls.ts";
 import { Button } from "./Button.tsx";
 import { IconGitHub } from "./icons/GitHub.tsx";
@@ -36,7 +37,9 @@ export const HeroSection = () => {
 					>
 						<IconGitHub className="size-8" />
 					</a>
-					<Button variant="outline">Contact me</Button>
+					<Button variant="outline" asChild>
+						<a href={`#${anchorsConfig.contact}`}>Contact me</a>
+					</Button>
 				</div>
 			</div>
 		</section>
