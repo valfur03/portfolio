@@ -11,6 +11,76 @@ export default defineConfig({
 	fonts: [
 		{
 			provider: fontProviders.local(),
+			name: "Inter",
+			cssVariable: "--font-inter",
+			display: "optional",
+			options: {
+				variants: [
+					// {
+					// 	src: ["./src/assets/fonts/Inter-ExtraLight.woff2"],
+					// 	weight: "200",
+					// 	style: "normal",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-ExtraLightItalic.woff2"],
+					// 	weight: "200",
+					// 	style: "italic",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-Light.woff2"],
+					// 	weight: "300",
+					// 	style: "normal",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-LightItalic.woff2"],
+					// 	weight: "300",
+					// 	style: "italic",
+					// },
+					{
+						src: ["./src/assets/fonts/Inter-Regular.woff2"],
+						weight: "400",
+						style: "normal",
+					},
+					// {
+					// 	src: ["./src/assets/fonts/Inter-Italic.woff2"],
+					// 	weight: "400",
+					// 	style: "italic",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-Medium.woff2"],
+					// 	weight: "500",
+					// 	style: "normal",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-MediumItalic.woff2"],
+					// 	weight: "500",
+					// 	style: "italic",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-SemiBold.woff2"],
+					// 	weight: "600",
+					// 	style: "normal",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-SemiBoldItalic.woff2"],
+					// 	weight: "600",
+					// 	style: "italic",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-Bold.woff2"],
+					// 	weight: "700",
+					// 	style: "normal",
+					// },
+					// {
+					// 	src: ["./src/assets/fonts/Inter-BoldItalic.woff2"],
+					// 	weight: "700",
+					// 	style: "italic",
+					// },
+				],
+			},
+		},
+		{
+			provider: fontProviders.local(),
 			name: "Overpass",
 			cssVariable: "--font-overpass",
 			display: "optional",

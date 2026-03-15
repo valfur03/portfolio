@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme inline {
-	--font-sans: var(--font-overpass);
 	--color-background: #f1f1f1;
 	--color-on-surface: #212121;
+	--font-inter: var(--font-inter), sans-serif;
+	--font-overpass: var(--font-overpass), sans-serif;
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-	@apply bg-background text-on-surface;
+	@apply bg-background text-on-surface font-inter;
 	padding-top: env(safe-area-inset-top);
 	padding-right: env(safe-area-inset-right);
 	padding-bottom: env(safe-area-inset-bottom);
