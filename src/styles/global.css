@@ -1,10 +1,26 @@
 @import "tailwindcss";
 
 @theme inline {
-	--color-background: #f1f1f1;
-	--color-on-surface: #212121;
-	--font-inter: var(--font-inter), sans-serif;
-	--font-overpass: var(--font-overpass), sans-serif;
+	--color-background: var(--background);
+	--color-on-surface: var(--on-surface);
+	--color-destructive: var(--destructive);
+	--color-ring: var(--ring);
+	--font-inter: var(--font-inter);
+	--font-overpass: var(--font-overpass);
+}
+
+@layer base {
+	button:not(:disabled),
+	[role="button"]:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+:root {
+	--background: #f1f1f1;
+	--on-surface: #212121;
+	--destructive: #e7000b;
+	--ring: var(--color-on-surface);
 }
 
 html {

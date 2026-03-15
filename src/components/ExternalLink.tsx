@@ -1,4 +1,5 @@
 import type { HTMLProps } from "react";
+import { Button } from "./Button.tsx";
 import { IconExternalLink } from "./icons/ExternalLink.tsx";
 
 export type ExternalLinkProps = HTMLProps<HTMLAnchorElement>;
@@ -10,9 +11,11 @@ export const ExternalLink = ({
 	...props
 }: ExternalLinkProps) => {
 	return (
-		<a {...props} target={target} rel={rel}>
-			{children}
-			<IconExternalLink className="ml-1.5" />
-		</a>
+		<Button variant="link" size="sm" asChild>
+			<a {...props} target={target} rel={rel}>
+				{children}
+				<IconExternalLink />
+			</a>
+		</Button>
 	);
 };
