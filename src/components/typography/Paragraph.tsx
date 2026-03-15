@@ -1,5 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import type { HTMLProps } from "react";
+import { cn } from "../../lib/utils/cn.ts";
 
 const typographyParagraphVariants = cva("", {
 	variants: {
@@ -22,5 +23,8 @@ export const TypographyParagraph = ({
 	size,
 	...props
 }: TypographyParagraphProps) => (
-	<p {...props} className={typographyParagraphVariants({ className, size })} />
+	<p
+		{...props}
+		className={cn(typographyParagraphVariants({ className, size }))}
+	/>
 );

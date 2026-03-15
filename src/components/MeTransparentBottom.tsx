@@ -1,4 +1,10 @@
-export const MeTransparentBottom = () => {
+export type MeTransparentBottomProps = {
+	className?: string;
+};
+
+export const MeTransparentBottom = ({
+	className,
+}: MeTransparentBottomProps) => {
 	return (
 		<svg
 			width="125"
@@ -6,6 +12,7 @@ export const MeTransparentBottom = () => {
 			viewBox="0 0 125 156"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
+			className={className}
 		>
 			<title>Valentin Furmanek illustration</title>
 			<g clip-path="url(#clip0_108_464)" mask="url(#fadeMask)">

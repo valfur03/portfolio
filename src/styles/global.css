@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
+	--animate-fade-in-up: var(--fade-in-up);
 	--color-background: var(--background);
 	--color-on-surface: var(--on-surface);
 	--color-destructive: var(--destructive);
@@ -17,6 +18,7 @@
 }
 
 :root {
+	--fade-in-up: fade-in-up 0.5s ease-out both;
 	--background: #f1f1f1;
 	--on-surface: #212121;
 	--destructive: #e7000b;
@@ -33,4 +35,24 @@ body {
 	padding-right: env(safe-area-inset-right);
 	padding-bottom: env(safe-area-inset-bottom);
 	padding-left: env(safe-area-inset-left);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
+
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
