@@ -8,6 +8,10 @@ import { defineConfig, fontProviders } from "astro/config";
 export default defineConfig({
 	integrations: [react()],
 
+	build: {
+		inlineStylesheets: "always",
+	},
+
 	fonts: [
 		{
 			provider: fontProviders.local(),
