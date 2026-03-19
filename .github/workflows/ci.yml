@@ -31,7 +31,7 @@ jobs:
           node-version-file: package.json
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm astro check
+      - run: pnpm check:types
 
   build:
     name: Build
@@ -47,5 +47,5 @@ jobs:
       - run: pnpm build
       - uses: actions/upload-artifact@v4
         with:
-          name: dist
-          path: dist/
+          name: web-dist
+          path: apps/web/dist/

@@ -1,3 +1,5 @@
+# turbo
+.turbo
 # build output
 dist/
 # generated types

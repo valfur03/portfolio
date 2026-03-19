@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy @portfolio/web
     if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
@@ -20,8 +20,8 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: dist
-          path: dist/
+          name: web-dist
+          path: apps/web/dist/
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ github.token }}
       - uses: R-J-dev/bunny-deploy@v3.0.0
@@ -33,6 +33,6 @@ jobs:
           storage-zone-name: ${{ vars.BUNNY_STORAGE_ZONE }}
           storage-zone-password: ${{ secrets.BUNNY_STORAGE_API_KEY }}
           storage-endpoint: ${{ vars.BUNNY_STORAGE_ENDPOINT }}
-          directory-to-upload: dist
+          directory-to-upload: apps/web/dist
           pull-zone-id: ${{ vars.BUNNY_PULL_ZONE_ID }}
           access-key: ${{ secrets.BUNNY_ACCOUNT_API_KEY }}
