@@ -2,11 +2,21 @@
 
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
-import { defineConfig, fontProviders } from "astro/config";
+import { defineConfig, envField, fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [react()],
+
+	env: {
+		schema: {
+			API_BASE_URL: envField.string({
+				context: "client",
+				access: "public",
+				default: "http://localhost:1337",
+			}),
+		},
+	},
 
 	build: {
 		inlineStylesheets: "always",

@@ -82,3 +82,12 @@ body {
 		transform: translateY(0);
 	}
 }
+
+@keyframes cooldown-shrink {
+	from {
+		transform: scaleX(1);
+	}
+	to {
+		transform: scaleX(0);
+	}
+}

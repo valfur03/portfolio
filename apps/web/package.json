@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.7",
+		"@portfolio/config": "workspace:*",
 		"@astrojs/react": "^5.0.0",
 		"@hookform/resolvers": "^5.2.2",
 		"@tailwindcss/vite": "^4.2.1",
