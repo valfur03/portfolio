@@ -8,6 +8,7 @@ const config = ({
 	app: {
 		keys: env.array("APP_KEYS"),
 	},
+	proxy: true,
 });
 
 export default config;

@@ -1,0 +1,35 @@
+{
+	"kind": "collectionType",
+	"collectionName": "contact_submissions",
+	"info": {
+		"singularName": "contact-submission",
+		"pluralName": "contact-submissions",
+		"displayName": "Contact Submission"
+	},
+	"options": {
+		"draftAndPublish": false
+	},
+	"attributes": {
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"email": {
+			"type": "email",
+			"required": true
+		},
+		"message": {
+			"type": "text",
+			"required": true
+		},
+		"senderIp": {
+			"type": "string",
+			"required": true
+		},
+		"status": {
+			"type": "enumeration",
+			"enum": ["delivered", "rejected", "failed"],
+			"required": true
+		}
+	}
+}

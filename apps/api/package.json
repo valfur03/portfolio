@@ -19,10 +19,13 @@
 		"check:types": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@portfolio/config": "workspace:*",
 		"@strapi/plugin-cloud": "5.40.0",
 		"@strapi/plugin-users-permissions": "5.40.0",
 		"@strapi/strapi": "5.40.0",
+		"@strapi/utils": "5.40.0",
 		"better-sqlite3": "12.6.2",
+		"zod": "^4.3.6",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
 		"react-router-dom": "^6.0.0",
