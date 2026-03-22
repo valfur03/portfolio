@@ -9,7 +9,7 @@ export default ({
 	{
 		name: "strapi::cors",
 		config: {
-			origin: [env("CORS_ORIGIN", "http://localhost:4321")],
+			origin: env("CORS_ORIGIN", "http://localhost:4321").split(","),
 		},
 	},
 	"strapi::poweredBy",
