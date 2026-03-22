@@ -1,0 +1,9 @@
+{
+	"$schema": "https://turborepo.dev/schema.json",
+	"extends": ["//"],
+	"tasks": {
+		"build": {
+			"env": ["API_BASE_URL"]
+		}
+	}
+}
