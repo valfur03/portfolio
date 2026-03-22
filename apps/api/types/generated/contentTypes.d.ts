@@ -445,6 +445,10 @@ export interface ApiContactSubmissionContactSubmission
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    deliveryStatus: Schema.Attribute.Enumeration<
+      ['delivered', 'rejected', 'failed']
+    > &
+      Schema.Attribute.Required;
     email: Schema.Attribute.Email & Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -456,8 +460,6 @@ export interface ApiContactSubmissionContactSubmission
     name: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     senderIp: Schema.Attribute.String & Schema.Attribute.Required;
-    status: Schema.Attribute.Enumeration<['delivered', 'rejected', 'failed']> &
-      Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

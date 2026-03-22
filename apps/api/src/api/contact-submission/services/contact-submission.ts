@@ -77,7 +77,7 @@ export default factories.createCoreService(
 				email: string;
 				message: string;
 				ip: string;
-				status: "delivered" | "rejected" | "failed";
+				deliveryStatus: "delivered" | "rejected" | "failed";
 			}) {
 				return strapi
 					.documents("api::contact-submission.contact-submission")
@@ -87,20 +87,20 @@ export default factories.createCoreService(
 							email: data.email,
 							message: data.message,
 							senderIp: data.ip,
-							status: data.status,
+							deliveryStatus: data.deliveryStatus,
 						},
 					});
 			},
 
 			async updateStatus(
 				documentId: string,
-				status: "delivered" | "rejected" | "failed",
+				deliveryStatus: "delivered" | "rejected" | "failed",
 			) {
 				return strapi
 					.documents("api::contact-submission.contact-submission")
 					.update({
 						documentId,
-						data: { status },
+						data: { deliveryStatus },
 					});
 			},
 

@@ -26,7 +26,7 @@
 			"type": "string",
 			"required": true
 		},
-		"status": {
+		"deliveryStatus": {
 			"type": "enumeration",
 			"enum": ["delivered", "rejected", "failed"],
 			"required": true

@@ -23,7 +23,7 @@ export default factories.createCoreController(
 		): Promise<never> {
 			await contactSubmissionService.storeSubmission({
 				...submission,
-				status: "rejected",
+				deliveryStatus: "rejected",
 			});
 			throw new errors.ApplicationError(reason);
 		}
@@ -80,7 +80,7 @@ export default factories.createCoreController(
 
 				const record = await contactSubmissionService.storeSubmission({
 					...submission,
-					status: "delivered",
+					deliveryStatus: "delivered",
 				});
 
 				try {
