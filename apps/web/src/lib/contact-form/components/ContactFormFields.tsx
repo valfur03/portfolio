@@ -126,6 +126,12 @@ export function ContactFormFields({
 									className="resize-none"
 									aria-invalid={fieldState.invalid}
 									disabled={isDisabled}
+									onKeyDown={(e) => {
+										if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
+											e.preventDefault();
+											handleSubmit();
+										}
+									}}
 								/>
 								<InputGroupAddon align="block-end">
 									<InputGroupText className="tabular-nums">
