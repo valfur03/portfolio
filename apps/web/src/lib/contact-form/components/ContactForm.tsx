@@ -4,8 +4,13 @@ import { ContactFormFields } from "./ContactFormFields.tsx";
 import { ContactFormSuccess } from "./ContactFormSuccess.tsx";
 
 export function ContactForm() {
-	const { status, formDisabled, submitFormValues, resetStatus } =
-		useContactForm();
+	const {
+		status,
+		formDisabled,
+		formDisabledMessage,
+		submitFormValues,
+		resetStatus,
+	} = useContactForm();
 
 	const isSuccess = status.state === "success";
 
@@ -19,6 +24,7 @@ export function ContactForm() {
 				<ContactFormFields
 					status={status}
 					formDisabled={formDisabled}
+					formDisabledMessage={formDisabledMessage}
 					onSubmit={submitFormValues}
 					onCooldownEnd={resetStatus}
 				/>

@@ -26,6 +26,7 @@ import { ContactFormError } from "./ContactFormError.tsx";
 interface ContactFormFieldsProps {
 	status: FormStatus;
 	formDisabled: boolean;
+	formDisabledMessage?: string;
 	onSubmit: (
 		values: { name: string; email: string; message: string },
 		honeypot: string,
@@ -36,6 +37,7 @@ interface ContactFormFieldsProps {
 export function ContactFormFields({
 	status,
 	formDisabled,
+	formDisabledMessage,
 	onSubmit,
 	onCooldownEnd,
 }: ContactFormFieldsProps) {
@@ -155,7 +157,7 @@ export function ContactFormFields({
 				<ContactFormError
 					message={
 						formDisabled
-							? "Too many attempts. Please try again later."
+							? formDisabledMessage
 							: isError
 								? status.message
 								: undefined

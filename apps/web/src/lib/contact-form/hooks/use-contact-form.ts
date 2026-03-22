@@ -46,7 +46,12 @@ export function useContactForm() {
 
 	return {
 		status,
-		formDisabled: challenge.rateLimited,
+		formDisabled: challenge.rateLimited || challenge.fetchFailed,
+		formDisabledMessage: challenge.rateLimited
+			? "Too many attempts. Please try again later."
+			: challenge.fetchFailed
+				? "Something went wrong. Please refresh the page."
+				: undefined,
 		submitFormValues,
 		resetStatus,
 	};

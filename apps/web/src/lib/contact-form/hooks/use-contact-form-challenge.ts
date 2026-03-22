@@ -4,6 +4,7 @@ import { fetchChallenge } from "../../api/contact/fetch-challenge.ts";
 export function useContactFormChallenge() {
 	const challengeRef = useRef<string | null>(null);
 	const [rateLimited, setRateLimited] = useState(false);
+	const [fetchFailed, setFetchFailed] = useState(false);
 
 	useEffect(() => {
 		fetchChallenge().then((result) => {
@@ -11,6 +12,8 @@ export function useContactFormChallenge() {
 				challengeRef.current = result.data.challenge;
 			} else if (result.error.name === "TooManyRequestsError") {
 				setRateLimited(true);
+			} else {
+				setFetchFailed(true);
 			}
 		});
 	}, []);
@@ -19,6 +22,11 @@ export function useContactFormChallenge() {
 		const result = await fetchChallenge();
 		if (result.ok) {
 			challengeRef.current = result.data.challenge;
+			setFetchFailed(false);
+		} else if (result.error.name === "TooManyRequestsError") {
+			setRateLimited(true);
+		} else {
+			setFetchFailed(true);
 		}
 	}
 
@@ -26,5 +34,5 @@ export function useContactFormChallenge() {
 		return challengeRef.current ?? "";
 	}
 
-	return { rateLimited, refetch, getCurrentChallenge };
+	return { rateLimited, fetchFailed, refetch, getCurrentChallenge };
 }
