@@ -16,6 +16,8 @@ import {
 	InputGroupText,
 	InputGroupTextarea,
 } from "../../../components/InputGroup.tsx";
+import { TypographyParagraph } from "../../../components/typography/Paragraph.tsx";
+import urlsConfig from "../../../config/urls.ts";
 import type { FormStatus } from "../hooks/use-contact-form.ts";
 import {
 	type ContactFormValues,
@@ -154,6 +156,14 @@ export function ContactFormFields({
 				>
 					{isSubmitting ? "Sending..." : "Send message"}
 				</CooldownButton>
+				<TypographyParagraph variant="secondary" className="text-sm">
+					By submitting this form, you consent to the processing of your
+					personal data as described in the{" "}
+					<a href={urlsConfig.privacyPolicy.relative} className="underline">
+						privacy policy
+					</a>
+					.
+				</TypographyParagraph>
 				<ContactFormError
 					message={
 						formDisabled

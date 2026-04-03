@@ -8,9 +8,7 @@ export type FooterArticleProps = PropsWithChildren<{
 export const FooterArticle = ({ name, children }: FooterArticleProps) => {
 	return (
 		<article>
-			<TypographyParagraph font="accent" weight="bold">
-				{name}
-			</TypographyParagraph>
+			<TypographyParagraph variant="title">{name}</TypographyParagraph>
 			{children}
 		</article>
 	);

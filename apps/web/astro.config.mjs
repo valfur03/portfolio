@@ -25,6 +25,31 @@ export default defineConfig({
 	fonts: [
 		{
 			provider: fontProviders.local(),
+			name: "Libre Caslon Text",
+			cssVariable: "--font-caslon",
+			display: "optional",
+			options: {
+				variants: [
+					{
+						src: ["./src/assets/fonts/LibreCaslonText-Regular.woff2"],
+						weight: "400",
+						style: "normal",
+					},
+					{
+						src: ["./src/assets/fonts/LibreCaslonText-Italic.woff2"],
+						weight: "400",
+						style: "italic",
+					},
+					{
+						src: ["./src/assets/fonts/LibreCaslonText-Bold.woff2"],
+						weight: "700",
+						style: "normal",
+					},
+				],
+			},
+		},
+		{
+			provider: fontProviders.local(),
 			name: "Inter",
 			cssVariable: "--font-inter",
 			display: "optional",

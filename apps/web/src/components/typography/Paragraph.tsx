@@ -4,24 +4,15 @@ import { cn } from "../../lib/utils/cn.ts";
 
 const typographyParagraphVariants = cva("", {
 	variants: {
-		font: {
-			default: "font-inter",
-			accent: "font-overpass",
-		},
-		size: {
-			sm: "text-sm",
-			base: "text-base",
-			lg: "text-lg",
-		},
-		weight: {
-			regular: "font-regular",
-			bold: "font-bold",
+		variant: {
+			default: "font-inter font-regular",
+			title: "font-overpass font-bold",
+			destructive: "text-destructive",
+			secondary: "text-on-surface-secondary",
 		},
 	},
 	defaultVariants: {
-		font: "default",
-		size: "base",
-		weight: "regular",
+		variant: "default",
 	},
 });
 
@@ -30,15 +21,11 @@ export type TypographyParagraphProps = HTMLProps<HTMLParagraphElement> &
 
 export const TypographyParagraph = ({
 	className,
-	font,
-	size,
-	weight,
+	variant,
 	...props
 }: TypographyParagraphProps) => (
 	<p
 		{...props}
-		className={cn(
-			typographyParagraphVariants({ className, font, size, weight }),
-		)}
+		className={cn(typographyParagraphVariants({ className, variant }))}
 	/>
 );

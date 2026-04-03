@@ -1,12 +1,13 @@
 ---
 import ContactSection from "../components/ContactSection.astro";
 import { HeroSection } from "../components/HeroSection";
-import Layout from "../layouts/Layout.astro";
+import { metaConfig } from "../config/meta.ts";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout title="Valentin Furmanek" description="My portfolio">
+<BaseLayout title={metaConfig.default.title} description={metaConfig.default.description}>
     <HeroSection />
     <div class="animate-fade-in-up [animation-delay:500ms]">
         <ContactSection />
     </div>
-</Layout>
+</BaseLayout>

@@ -5,7 +5,6 @@ import { IconGitHub } from "./icons/GitHub.tsx";
 import { IconLinkedIn } from "./icons/LinkedIn.tsx";
 import { MeLightFromBelow } from "./MeLightFromBelow.tsx";
 import { MeTransparentBottom } from "./MeTransparentBottom.tsx";
-import { TypographyH1 } from "./typography/H1.tsx";
 import { TypographyParagraph } from "./typography/Paragraph.tsx";
 
 export const HeroSection = () => {
@@ -16,9 +15,9 @@ export const HeroSection = () => {
 				<MeLightFromBelow className="size-48 animate-fade-in-up [animation-delay:0ms] hidden md:block lg:size-64" />
 			</div>
 			<div className="flex flex-col items-center gap-3 md:items-start">
-				<TypographyH1 className="animate-fade-in-up [animation-delay:100ms]">
+				<h1 className="animate-fade-in-up [animation-delay:100ms]">
 					Hi! I’m Valentin Furmanek
-				</TypographyH1>
+				</h1>
 				<TypographyParagraph className="animate-fade-in-up [animation-delay:300ms]">
 					Software engineer building open-source tools everyday
 				</TypographyParagraph>
